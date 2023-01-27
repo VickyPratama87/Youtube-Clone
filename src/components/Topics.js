@@ -1,16 +1,13 @@
 import React from "react";
-import TopicBtn from "./TopicBtn";
 
-const Topics = () => {
-  const topics = ["Bootstrap", "CSS", "HTML", "JavaScript", "Laravel", "Node JS", "Python", "React JS", "React Native", "Tailwind CSS"];
-
+const TopicBtn = ({ topic }) => {
   return (
-    <div className="flex flex-wrap items-center gap-3 px-4 pt-20 pb-4 w-full bg-white lg:px-8 whitespace-nowrap font-semibold fixed z-40">
-      {topics.map((topic) => (
-        <TopicBtn topic={topic} />
-      ))}
-    </div>
+    <>
+      <div className="bg-gray-200 rounded-[.5rem] hover:bg-gray-300 hover:text-white duration-200 cursor-pointer">
+        <p className="py-1 px-3 text-[14px]">{topic}</p>
+      </div>
+    </>
   );
 };
 
-export default Topics;
+export default TopicBtn;

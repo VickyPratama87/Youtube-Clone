@@ -44,11 +44,13 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="hidden flex-col items-center gap-2 pt-20 px-1 md:flex lg:px-5">
-      {sideItems.map((item) => (
-        <SideBtn name={item.name} icon={item.icon} />
-      ))}
-    </div>
+    <>
+      <div className="hidden flex-col items-center gap-2 pt-20 px-1 md:flex lg:px-5">
+        {sideItems.map((item) => (
+          <SideBtn name={item.name} icon={item.icon} />
+        ))}
+      </div>
+    </>
   );
 };
 

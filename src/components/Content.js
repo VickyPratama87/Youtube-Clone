@@ -126,11 +126,13 @@ const Content = () => {
   ];
 
   return (
-    <div className="px-1 pt-32 pb-4 gap-4 gap-y-14 sm:px-4 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {videos.map((video) => (
-        <ContentCard photo={video.photo} title={video.title} profile={video.profile} channel={video.channel} viewer={video.viewer} time={video.time} />
-      ))}
-    </div>
+    <>
+      <div className="px-1 pt-56 sm:pt-52 md:pt-48 lg:pt-[150px] pb-4 gap-4 gap-y-14 sm:px-4 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {videos.map((video) => (
+          <ContentCard photo={video.photo} title={video.title} profile={video.profile} channel={video.channel} viewer={video.viewer} time={video.time} />
+        ))}
+      </div>
+    </>
   );
 };
 

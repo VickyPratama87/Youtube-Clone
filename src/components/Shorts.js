@@ -42,11 +42,13 @@ const Shorts = () => {
   ];
 
   return (
-    <div className="px-1 py-10 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 sm:px-4 lg:px-8 ">
-      {videos.map((video) => (
-        <ShortsCard photo={video.photo} title={video.title} viewer={video.viewer} />
-      ))}
-    </div>
+    <>
+      <div className="px-1 py-10 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 sm:px-4 lg:px-8 ">
+        {videos.map((video) => (
+          <ShortsCard photo={video.photo} title={video.title} viewer={video.viewer} />
+        ))}
+      </div>
+    </>
   );
 };
 
